@@ -1,0 +1,5 @@
+server {
+    location ${APP_BASE_PREFIX}/ {
+        alias /app/;
+    }
+}

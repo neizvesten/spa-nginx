@@ -1,0 +1,6 @@
+FROM nginx:latest
+COPY default-third.conf.template /etc/nginx/templates/default.conf.template
+ARG APP_BASE_PREFIX=""
+ENV APP_BASE_PREFIX=$APP_BASE_PREFIX
+COPY app/ /app
+expose 80
